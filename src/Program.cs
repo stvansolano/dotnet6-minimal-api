@@ -67,7 +67,7 @@ app.MapDelete("/todos/{id}", async (int id, TodoDb db) =>
     .Produces(StatusCodes.Status204NoContent)
     .Produces(StatusCodes.Status404NotFound);
 
-// dotnet run --urls "http://*:80"
+// dotnet run --urls "http://*:5000"
 app.Run();
 
 async Task EnsureDb(IServiceProvider services, ILogger logger)
