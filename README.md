@@ -21,3 +21,9 @@ dotnet new webapi --name MyWebApi
 cd MyWebApi
 dotnet run --urls "http://*:5000"
 ```
+
+## Trust local development certificate (Https)
+
+```
+dotnet dev-certs https --trust
+```
